@@ -1,11 +1,56 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Online Quiz System</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
 </head>
+
 <body>
 
-<h1>Welcome To Online Quiz System</h1>
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container">
+        <span class="navbar-brand">
+            Online Quiz System
+        </span>
+    </div>
+</nav>
+
+<div class="container mt-5">
+
+    <div class="text-center">
+
+        <h1>Online Quiz System</h1>
+
+        <p class="lead">
+            Spring Boot + MySQL + Thymeleaf
+        </p>
+
+        <a href="/add-question"
+           class="btn btn-primary m-2">
+            Add Question
+        </a>
+
+        <a href="/questions"
+           class="btn btn-warning m-2">
+            View Questions
+        </a>
+
+        <a href="/categories"
+           class="btn btn-success m-2">
+            Start Quiz
+        </a>
+        
+        <a href="/history"
+           class="btn btn-info m-2">
+            Score History
+        </a>
+
+    </div>
+
+</div>
 
 </body>
 </html>

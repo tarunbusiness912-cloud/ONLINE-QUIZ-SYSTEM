@@ -20,6 +20,8 @@ public class Question {
     private String optionD;
 
     private String correctAnswer;
+    
+    private String category;
 
     public Question() {
     }
@@ -78,5 +80,13 @@ public class Question {
 
     public void setCorrectAnswer(String correctAnswer) {
         this.correctAnswer = correctAnswer;
+    }
+
+    public String getCategory() {
+    return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
     }
 }

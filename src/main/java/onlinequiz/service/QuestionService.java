@@ -19,6 +19,21 @@ public class QuestionService {
 
 public List<Question> getAllQuestions() {
     return repository.findAll();
+
+
 }
 
+public void deleteQuestion(Long id) {
+    repository.deleteById(id);
+}
+
+public Question getQuestionById(Long id) {
+    return repository.findById(id).orElse(null);
+}
+
+public List<Question> getQuestionsByCategory(
+        String category) {
+
+    return repository.findByCategory(category);
+}
 }
